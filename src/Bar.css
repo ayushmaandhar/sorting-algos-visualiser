@@ -1,0 +1,32 @@
+.bars-container {
+  display: grid;
+  grid-template-columns: repeat(50, 1fr); /* Creates 50 columns of equal width */
+  gap: 1px 5px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 500px;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 0px;
+  overflow: scroll;
+}
+
+.bar {
+  display: flex;
+  height: 100%;
+  flex-direction: column; /* Stack bar and number vertically */
+  align-items: center; /* Center-align items horizontally */
+  text-align: center;
+  justify-content: flex-end;
+}
+
+.bar-fill {
+  width: 100%; /* Take up full width of parent */
+  background-color: #007bff;
+  margin-bottom: 1px; /* Space between bar and number */
+  border-radius: 2.5px;
+}
+
+.bar-number {
+  color:coral;
+}
